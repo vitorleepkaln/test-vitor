@@ -3,7 +3,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view.lkml"
-
+include: "/test_Pdtt.view.lkml"
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
 
@@ -40,6 +40,8 @@ explore: billion_orders {
 # Each joined view also needs to define a primary key.
 
 explore: connection_reg_r3 {}
+
+explore: pdt_chk {}
 
 explore: day_of_week {}
 
